@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1720999319418,
+      "tag": "0000_rapid_dreadnoughts",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1721000388106,
+      "tag": "0001_woozy_fat_cobra",
+      "breakpoints": true
+    }
+  ]
+}
