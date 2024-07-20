@@ -3,6 +3,7 @@ import { handle } from "hono/vercel";
 import { HTTPException } from "hono/http-exception";
 
 import accounts from "./accounts";
+import categories from "./categories";
 
 export const runtime = "edge";
 
@@ -21,7 +22,9 @@ app.onError((err, c) => {
   );
 });
 
-const routes = app.route("/accounts", accounts);
+const routes = app
+  .route("/accounts", accounts)
+  .route("/categories", categories);
 
 export const GET = handle(app);
 export const POST = handle(app);
